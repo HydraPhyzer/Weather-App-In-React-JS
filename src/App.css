@@ -8,10 +8,12 @@
 .App
 {
     position: absolute;  
-    background: url('../public/Images/Sun.webp');
+    top: 0px;
+    background: url('../public/Images/Moon.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     padding: 10px;
+    height: fit-content;
 }
