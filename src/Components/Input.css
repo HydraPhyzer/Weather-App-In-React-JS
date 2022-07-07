@@ -1,0 +1,26 @@
+.Inp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Inp input
+{
+    margin: 10px 10px 10px 0px;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+.Inp button
+{
+    padding: 5px 20px;
+    border:none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.Inp button:hover
+{
+    cursor: pointer;
+}
