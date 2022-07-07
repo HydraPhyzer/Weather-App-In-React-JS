@@ -21,12 +21,14 @@ const App = () => {
     {
       let {name , country} =Data.location;
       let {temp_c:temp , humidity,cloud,wind_kph,pressure_in}=Data.current;
+      let {icon} = Data.current.condition;
 
       let NewObj=
       {
         name,
         country,
-        temp
+        temp,
+        icon,
       }
       let Arr=
       [

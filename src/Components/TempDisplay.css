@@ -5,6 +5,12 @@
 .A1-Display p {
     font-size: 3rem;
     margin: 20px 0px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
 }
 
 .A1-Display span {

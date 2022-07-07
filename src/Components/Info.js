@@ -5,13 +5,16 @@ const Info = (Props) => {
   return (
     <div className='Info'>
         {
-            Props.Infor.map((Elem)=>
+            Props.Infor.map((Elem , Ind)=>
             {
                 return(
-                    <div className="A">
+                    <div className="A" key={Ind}>
                         <div className="Icon-P">
-                            <p>{Elem.Name}</p>
-                            <img src={Elem.Icon} alt="" />
+                            <p>
+                                <img src={Elem.Icon} alt="" />
+                                {Elem.Name}
+                            </p>
+                            
                         </div>
                         <span>{Elem.Value}</span>
                     </div>

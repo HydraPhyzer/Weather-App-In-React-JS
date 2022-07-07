@@ -15,5 +15,13 @@
     background-position: center;
 
     padding: 10px;
-    height: fit-content;
+    min-height: 100vh;
+}
+
+@media (max-width:320px)
+{
+    .App
+    {
+        width: 100vw;
+    }
 }
