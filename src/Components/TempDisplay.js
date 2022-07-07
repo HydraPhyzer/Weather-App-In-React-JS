@@ -1,13 +1,13 @@
 import React from 'react'
 import './TempDisplay.css'
 
-const TempDisplay = () => {
+const TempDisplay = (Props) => {
     return (
         <div className="A1-Display">
             <p>
-                25&deg; C
+                {Props.Weather.temp}&deg; C
             </p>
-            <span>DELHI/INDIA</span>
+            <span>{Props.Weather.name}/{Props.Weather.country}</span>
         </div>
     )
 }

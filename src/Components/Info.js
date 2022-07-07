@@ -1,38 +1,23 @@
 import React from 'react'
 import './Info.css'
 
-const Info = () => {
+const Info = (Props) => {
   return (
     <div className='Info'>
-        <div className="A">
-            <div className="Icon-P">
-                <p>Humidity</p>
-                <img src="/Icons/Humidity.png" alt="" />
-            </div>
-            <span>25%</span>
-        </div>
-        <div className="A">
-            <div className="Icon-P">
-                <p>Humidity</p>
-                <img src="/Icons/Humidity.png" alt="" />
-            </div>
-            <span>25%</span>
-        </div>
-        <div className="A">
-            <div className="Icon-P">
-                <p>Humidity</p>
-                <img src="/Icons/Humidity.png" alt="" />
-            </div>
-            <span>25%</span>
-        </div>
-        <div className="A">
-            <div className="Icon-P">
-                <p>Humidity</p>
-                <img src="/Icons/Humidity.png" alt="" />
-            </div>
-            <span>25%</span>
-        </div>
-
+        {
+            Props.Infor.map((Elem)=>
+            {
+                return(
+                    <div className="A">
+                        <div className="Icon-P">
+                            <p>{Elem.Name}</p>
+                            <img src={Elem.Icon} alt="" />
+                        </div>
+                        <span>{Elem.Value}</span>
+                    </div>
+                )
+            })
+        }
     </div>
   )
 }
